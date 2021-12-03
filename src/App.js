@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 
 import MinMax from './components/MinMax';
 import Primeiro from './components/Primeiro';
@@ -8,13 +8,21 @@ import Aleatorio from './components/Aleatorio';
 import Titulo from './components/Titulo';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import Pai from './components/indireta/Pai';
+import ContadorV2 from './components/contador/ContadorV2';
+import Diferenciar from './components/Diferenciar';
 
 export default () => (
   <View style={style.App}>
+    <Diferenciar />
+    {/* 
+    <ContadorV2 />
+    <Text>
+      <Pai />
+    </Text>
+    <Pai />
     <Contador inicial={100} passo={13} />
     <Contador />
-
-    {/* 
     <Botao />
     <Titulo
       principal="Cadastro Produto"
@@ -31,7 +39,7 @@ export default () => (
 
 const style = StyleSheet.create({
   App: {
-    backgroundColor: 'darkred',
+    backgroundColor: 'darkgreen',
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
