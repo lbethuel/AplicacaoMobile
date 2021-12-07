@@ -14,9 +14,14 @@ import Diferenciar from './components/Diferenciar';
 import ParImpar from './components/ParImpar';
 import Familia from './components/relacao/Familia';
 import Membro from './components/relacao/Membro';
+import UsuarioLogado from './components/UsuarioLogado';
+import ListaProdutos from './components/produtos/ListaProdutos';
 
 export default () => (
   <SafeAreaView style={style.App}>
+    <ListaProdutos />
+    {/* 
+    <UsuarioLogado usuario={{nome: 'Lucas', email: 'lu@lu.com'}} />
     <Familia nome="Familia Oliveira">
       <Membro nome="Maria " sobrenome="Oliveira" />
       <Membro nome="Joana " sobrenome="Oliveira" />
@@ -27,8 +32,6 @@ export default () => (
       <Membro nome="Patrick " sobrenome="Ferreira" />
       <Membro nome="Fernanda " sobrenome="Ferreira" />
     </Familia>
-
-    {/* 
     <ParImpar num={0} />
     <Diferenciar />
     <ContadorV2 />
