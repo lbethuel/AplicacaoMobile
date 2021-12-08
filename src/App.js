@@ -19,13 +19,17 @@ import ListaProdutos from './components/produtos/ListaProdutos';
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 import DigiteSeuNome from './components/DigiteSeuNome';
 import FlexboxV1 from './components/layout/FlexboxV1';
+import FlexboxV2 from './components/layout/FlexboxV2';
+import FlexboxV3 from './components/layout/FlexboxV3';
+import FlexboxV4 from './components/layout/FlexboxV4';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <FlexboxV1 />
+    <FlexboxV4 />
 
     {/* 
     <DigiteSeuNome />
+    <FlexboxV1 />
     <UsuarioLogado usuario={{nome: 'Lucas', email: 'lu@lu.com'}} />
     <Familia nome="Familia Oliveira">
       <Membro nome="Maria " sobrenome="Oliveira" />
