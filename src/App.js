@@ -16,11 +16,16 @@ import Familia from './components/relacao/Familia';
 import Membro from './components/relacao/Membro';
 import UsuarioLogado from './components/UsuarioLogado';
 import ListaProdutos from './components/produtos/ListaProdutos';
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
+import DigiteSeuNome from './components/DigiteSeuNome';
+import FlexboxV1 from './components/layout/FlexboxV1';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <ListaProdutos />
+    <FlexboxV1 />
+
     {/* 
+    <DigiteSeuNome />
     <UsuarioLogado usuario={{nome: 'Lucas', email: 'lu@lu.com'}} />
     <Familia nome="Familia Oliveira">
       <Membro nome="Maria " sobrenome="Oliveira" />
@@ -57,7 +62,7 @@ export default () => (
 
 const style = StyleSheet.create({
   App: {
-    backgroundColor: 'darkgreen',
+    backgroundColor: 'white',
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
