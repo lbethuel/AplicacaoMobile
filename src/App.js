@@ -22,12 +22,14 @@ import FlexboxV1 from './components/layout/FlexboxV1';
 import FlexboxV2 from './components/layout/FlexboxV2';
 import FlexboxV3 from './components/layout/FlexboxV3';
 import FlexboxV4 from './components/layout/FlexboxV4';
+import Mega from './components/mega/Mega';
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <FlexboxV4 />
-
+    <Mega qtdeNumeros={12} />
     {/* 
+    <FlexboxV4 />
+    
     <DigiteSeuNome />
     <FlexboxV1 />
     <UsuarioLogado usuario={{nome: 'Lucas', email: 'lu@lu.com'}} />
@@ -66,7 +68,7 @@ export default () => (
 
 const style = StyleSheet.create({
   App: {
-    backgroundColor: 'white',
+    backgroundColor: 'green',
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
